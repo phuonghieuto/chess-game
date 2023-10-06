@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    overflow-x: hidden;
+}
+h1 {
+    margin: 10px;
+}
+
+.board {
+    width: 560px;
+    height: 560px;
+    display: grid;
+    grid-template: repeat(8,1fr)/repeat(8,1fr);
+    background-image: url("./images/board.png");
+    background-size: contain;
+    border-radius: 3px;
+}
+
+#chess-pieces {
+    width: 560px;
+    height: 560px;
+    display: grid;
+    z-index: 2;
+    position: relative;
+    grid-template: repeat(8,1fr)/repeat(8,1fr);
+    margin-top: -560px;
+    
+}
+
+.cell {
+    width: 70px;
+    height: 70px;
+    font-size: 0px;
+}
+
+.piece {
+    width: 70px;
+    height: 70px;
+    font-size: 0px;
+}
+
+.image {
+    position: absolute;
+    font-size: 0px;
+    width: 70px;
+    height: 70px;
+    z-index: 2;
+    cursor: grab;
+    filter: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+
+#turn {
+    margin: 10px 10px;
+}
+
+.piece:active {
+    cursor: grabbing;
+}
+
+.highlight {
+    background-color: rgb(255, 255, 51); 
+    opacity: 0.5;
+}
+
+.old-move {
+    background-color: rgb(255, 255, 51); 
+    opacity: 0.5;
+}
+
+.hint {
+    background-color: rgba(0,0,0,.15);
+    background-clip: content-box;
+    border-radius: 50%;
+    box-sizing: border-box;
+    pointer-events: none;
+    height: 30%;
+    width: 30%;
+    margin: auto;
+}
+
+.capture {
+    border: 7px solid rgba(0,0,0,.2);
+    background-clip: content-box;
+    border-radius: 50%;
+    box-sizing: border-box;
+    pointer-events: none;
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <h1>Chess</h1>
+    <h2 id="turn">White's Turn</h2>
+
+    <div class="board">
+        <div class="cell" id="81i"></div>
+        <div class="cell" id="82i"></div>
+        <div class="cell" id="83i"></div>
+        <div class="cell" id="84i"></div>
+        <div class="cell" id="85i"></div>
+        <div class="cell" id="86i"></div>
+        <div class="cell" id="87i"></div>
+        <div class="cell" id="88i"></div>
+        <div class="cell" id="71i"></div>
+        <div class="cell" id="72i"></div>
+        <div class="cell" id="73i"></div>
+        <div class="cell" id="74i"></div>
+        <div class="cell" id="75i"></div>
+        <div class="cell" id="76i"></div>
+        <div class="cell" id="77i"></div>
+        <div class="cell" id="78i"></div>
+        <div class="cell" id="61i"></div>
+        <div class="cell" id="62i"></div>
+        <div class="cell" id="63i"></div>
+        <div class="cell" id="64i"></div>
+        <div class="cell" id="65i"></div>
+        <div class="cell" id="66i"></div>
+        <div class="cell" id="67i"></div>
+        <div class="cell" id="68i"></div>
+        <div class="cell" id="51i"></div>
+        <div class="cell" id="52i"></div>
+        <div class="cell" id="53i"></div>
+        <div class="cell" id="54i"></div>
+        <div class="cell" id="55i"></div>
+        <div class="cell" id="56i"></div>
+        <div class="cell" id="57i"></div>
+        <div class="cell" id="58i"></div>
+        <div class="cell" id="41i"></div>
+        <div class="cell" id="42i"></div>
+        <div class="cell" id="43i"></div>
+        <div class="cell" id="44i"></div>
+        <div class="cell" id="45i"></div>
+        <div class="cell" id="46i"></div>
+        <div class="cell" id="47i"></div>
+        <div class="cell" id="48i"></div>
+        <div class="cell" id="31i"></div>
+        <div class="cell" id="32i"></div>
+        <div class="cell" id="33i"></div>
+        <div class="cell" id="34i"></div>
+        <div class="cell" id="35i"></div>
+        <div class="cell" id="36i"></div>
+        <div class="cell" id="37i"></div>
+        <div class="cell" id="38i"></div>
+        <div class="cell" id="21i"></div>
+        <div class="cell" id="22i"></div>
+        <div class="cell" id="23i"></div>
+        <div class="cell" id="24i"></div>
+        <div class="cell" id="25i"></div>
+        <div class="cell" id="26i"></div>
+        <div class="cell" id="27i"></div>
+        <div class="cell" id="28i"></div>
+        <div class="cell" id="11i"></div>
+        <div class="cell" id="12i"></div>
+        <div class="cell" id="13i"></div>
+        <div class="cell" id="14i"></div>
+        <div class="cell" id="15i"></div>
+        <div class="cell" id="16i"></div>
+        <div class="cell" id="17i"></div>
+        <div class="cell" id="18i"></div>
+    </div>
+    <div id="chess-pieces">
+        <div class="piece" id="81">BR</div>
+        <div class="piece" id="82">BN</div>
+        <div class="piece" id="83">BB</div>
+        <div class="piece" id="84">BQ</div>
+        <div class="piece" id="85">BK</div>
+        <div class="piece" id="86">BB</div>
+        <div class="piece" id="87">BN</div>
+        <div class="piece" id="88">BR</div>
+        <div class="piece" id="71">BP</div>
+        <div class="piece" id="72">BP</div>
+        <div class="piece" id="73">BP</div>
+        <div class="piece" id="74">BP</div>
+        <div class="piece" id="75">BP</div>
+        <div class="piece" id="76">BP</div>
+        <div class="piece" id="77">BP</div>
+        <div class="piece" id="78">BP</div>
+        <div class="piece" id="61"></div>
+        <div class="piece" id="62"></div>
+        <div class="piece" id="63"></div>
+        <div class="piece" id="64"></div>
+        <div class="piece" id="65"></div>
+        <div class="piece" id="66"></div>
+        <div class="piece" id="67"></div>
+        <div class="piece" id="68"></div>
+        <div class="piece" id="51"></div>
+        <div class="piece" id="52"></div>
+        <div class="piece" id="53"></div>
+        <div class="piece" id="54"></div>
+        <div class="piece" id="55"></div>
+        <div class="piece" id="56"></div>
+        <div class="piece" id="57"></div>
+        <div class="piece" id="58"></div>
+        <div class="piece" id="41"></div>
+        <div class="piece" id="42"></div>
+        <div class="piece" id="43"></div>
+        <div class="piece" id="44"></div>
+        <div class="piece" id="45"></div>
+        <div class="piece" id="46"></div>
+        <div class="piece" id="47"></div>
+        <div class="piece" id="48"></div>
+        <div class="piece" id="31"></div>
+        <div class="piece" id="32"></div>
+        <div class="piece" id="33"></div>
+        <div class="piece" id="34"></div>
+        <div class="piece" id="35"></div>
+        <div class="piece" id="36"></div>
+        <div class="piece" id="37"></div>
+        <div class="piece" id="38"></div>
+        <div class="piece" id="21">WP</div>
+        <div class="piece" id="22">WP</div>
+        <div class="piece" id="23">WP</div>
+        <div class="piece" id="24">Wp</div>
+        <div class="piece" id="25">WP</div>
+        <div class="piece" id="26">WP</div>
+        <div class="piece" id="27">WP</div>
+        <div class="piece" id="28">WP</div>
+        <div class="piece" id="11">WR</div>
+        <div class="piece" id="12">WN</div>
+        <div class="piece" id="13">WB</div>
+        <div class="piece" id="14">WQ</div>
+        <div class="piece" id="15">WK</div>
+        <div class="piece" id="16">WB</div>
+        <div class="piece" id="17">WN</div>
+        <div class="piece" id="18">WR</div>
+    </div>
+    <script type="text/javascript" src="pieces/Piece.js"></script>
+    <script type="text/javascript" src="pieces/King.js"></script>
+    <script type="text/javascript" src="pieces/Queen.js"></script>
+    <script type="text/javascript" src="pieces/Rook.js"></script>
+    <script type="text/javascript" src="pieces/Bishop.js"></script>
+    <script type="text/javascript" src="pieces/Knight.js"></script>
+    <script type="text/javascript" src="pieces/Pawn.js"></script>
+    <script type="text/javascript" src="chess.js"></script>
+</body>
+</html>
