@@ -1,2 +1,2 @@
 # chess-game
-Chess Game from HTML, CSS, JS
+Chess Game from HTML, CSS, JS (incomplete)
